@@ -37,7 +37,7 @@ func newReloadCmd() *cobra.Command {
 			clusterReport.ID = scrubClusterName(clusterName)
 			teleCommand = append(teleCommand, scrubClusterName(clusterName))
 
-			return cm.Reload(clusterName, gOpt, skipRestart, skipConfirm)
+			return cm.Reload(clusterName, gOpt, skipRestart, true)
 		},
 	}
 

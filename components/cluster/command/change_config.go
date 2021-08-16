@@ -31,7 +31,7 @@ func newChangeConfigCmd() *cobra.Command {
 			teleCommand = append(teleCommand, scrubClusterName(clusterName))
 			configFile := args[1]
 
-			return cm.ChangeConfig(clusterName, configFile, skipConfirm)
+			return cm.ChangeConfig(clusterName, configFile, true)
 		},
 	}
 

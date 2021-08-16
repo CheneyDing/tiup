@@ -35,7 +35,7 @@ func newReloadCmd() *cobra.Command {
 
 			clusterName := args[0]
 
-			return cm.Reload(clusterName, gOpt, skipRestart, skipConfirm)
+			return cm.Reload(clusterName, gOpt, skipRestart, true)
 		},
 	}
 

@@ -29,7 +29,7 @@ func newChangeConfigCmd() *cobra.Command {
 			clusterName := args[0]
 			configFile := args[1]
 
-			return cm.ChangeConfig(clusterName, configFile, skipConfirm)
+			return cm.ChangeConfig(clusterName, configFile, true)
 		},
 	}
 
